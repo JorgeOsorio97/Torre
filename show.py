@@ -56,31 +56,162 @@ d_works = [
 ]
 
 states = [
-    'Aberdeen', 'Aberdeenshire', 'Abu Dhabi', 'Afghanistan', 'Angus', 'Argyll', 
-    'Australia', 'Avon', 'Ayrshire', 'Bahrain', 'Banffshire', 'Barbados', 'Bedfordshire', 
-    'Belgium', 'Berkshire', 'Berwickshire', 'Birmingham', 'Brazil', 'Bristol', 'Buckinghamshire', 
-    'Caithness', 'Cambridgeshire', 'Canada', 'Cardiff', 'Central London', 'Channel Islands', 'Cheshire',
-    'China', 'City of London', 'Clackmannanshire', 'Cleveland', 'Clwyd', 'Cornwall', 'County Antrim', 
-    'County Armagh', 'County Derry', 'County Down', 'County Durham', 'County Tyrone', 'Cumbria', 
-    'Czech Republic', 'Denmark', 'Derbyshire', 'Devon', 'Dorset', 'Dubai', 'Dumfriesshire', 'Dunbartonshire', 
-    'Dyfed', 'East Anglia', 'East London', 'East Lothian', 'East Midlands', 'East Sussex', 'Edinburgh', 
-    'Egypt', 'England', 'Essex', 'Fife', 'France', 'Germany', 'Gibraltar', 'Glasgow', 'Gloucestershire', 
-    'Greece', 'Gwent', 'Gwynedd', 'Hampshire', 'Herefordshire', 'Hertfordshire', 'Hong Kong', 'Hungary', 
-    'Indonesia', 'Inverness-Shire', 'Inverness-shire', 'Iraq', 'Ireland', 'Isle Of Wight', 'Isle of Orkney', 
-    'Isle of Wight', 'Italy', 'Kent', 'Kincardineshire', 'Kirkcudbrightshire', 'Lanarkshire', 'Lancashire', 
-    'Leicestershire', 'Liberia', 'Lincolnshire', 'London', 'Malta', 'Manchester', 'Merseyside', 'Mid Glamorgan', 
-    'Middlesex', 'Midlothian', 'Morayshire', 'Netherlands', 'New Zealand', 'Norfolk', 'North East England', 
-    'North Humberside', 'North London', 'North West England', 'North West London', 'North Yorkshire', 
-    'Northamptonshire', 'Northern Ireland', 'Northumberland', 'Norway', 'Nottinghamshire', 'Other', 
-    'Oxfordshire', 'Perthshire', 'Poland', 'Portugal', 'Powys', 'Renfrewshire', 'Rest of the World', 
-    'Ross-Shire', 'Ross-shire', 'Roxburghshire', 'Russian Federation', 'Rutland', 'Saudi Arabia', 'Scotland', 
-    'Selkirkshire', 'Shetland Islands', 'Shropshire', 'Singapore', 'Somerset', 'South East England', 
-    'South East London', 'South Glamorgan', 'South Humberside', 'South West England', 'South West London', 
-    'South Yorkshire', 'Spain', 'St. Vincent & The Grenadines', 'Staffordshire', 'Stirlingshire', 'Suffolk', 
-    'Surrey', 'Sutherland', 'Sweden', 'Switzerland', 'Taiwan', 'Thailand', 'Tyne And Wear', 'Tyne and Wear', 
-    'USA', 'United Arab Emirates', 'Wales', 'Warwickshire', 'West Glamorgan', 'West London', 'West Lothian', 
-    'West Midlands', 'West Midlands (Region)', 'West Sussex', 'West Yorkshire', 'Wigtownshire', 'Wiltshire', 
-    'Worcestershire', 'Wrexham', 'Yorkshire and Humberside']
+    'Aberdeen',
+    'Aberdeenshire',
+    'Abu Dhabi',
+    'Angus',
+    'Argyll',
+    'Australia',
+    'Avon',
+    'Ayrshire',
+    'Bahrain',
+    'Banffshire',
+    'Barbados',
+    'Bedfordshire',
+    'Belgium',
+    'Berkshire',
+    'Berwickshire',
+    'Birmingham',
+    'Brazil',
+    'Bristol',
+    'Buckinghamshire',
+    'Caithness',
+    'Cambridgeshire',
+    'Cardiff',
+    'Central London',
+    'Channel Islands',
+    'Cheshire',
+    'China',
+    'City of London',
+    'Clackmannanshire',
+    'Cleveland',
+    'Clwyd',
+    'Cornwall',
+    'County Antrim',
+    'County Armagh',
+    'County Derry',
+    'County Down',
+    'County Durham',
+    'County Tyrone',
+    'Cumbria',
+    'Derbyshire',
+    'Devon',
+    'Dorset',
+    'Dubai',
+    'Dumfriesshire',
+    'Dunbartonshire',
+    'Dyfed',
+    'East Anglia',
+    'East London',
+    'East Lothian',
+    'East Midlands',
+    'East Sussex',
+    'Edinburgh',
+    'Egypt',
+    'England',
+    'Essex',
+    'Fife',
+    'France',
+    'Germany',
+    'Gibraltar',
+    'Glasgow',
+    'Gloucestershire',
+    'Gwent',
+    'Gwynedd',
+    'Hampshire',
+    'Herefordshire',
+    'Hertfordshire',
+    'Hong Kong',
+    'Indonesia',
+    'Inverness-Shire',
+    'Inverness-shire',
+    'Ireland',
+    'Isle of Orkney',
+    'Isle of Wight',
+    'Italy',
+    'Kent',
+    'Kincardineshire',
+    'Lanarkshire',
+    'Lancashire',
+    'Leicestershire',
+    'Liberia',
+    'Lincolnshire',
+    'London',
+    'Malta',
+    'Manchester',
+    'Merseyside',
+    'Mid Glamorgan',
+    'Middlesex',
+    'Midlothian',
+    'Morayshire',
+    'Netherlands',
+    'New Zealand',
+    'Norfolk',
+    'North East England',
+    'North Humberside',
+    'North London',
+    'North West England',
+    'North West London',
+    'North Yorkshire',
+    'Northamptonshire',
+    'Northern Ireland',
+    'Northumberland',
+    'Norway',
+    'Nottinghamshire',
+    'Other',
+    'Oxfordshire',
+    'Perthshire',
+    'Poland',
+    'Powys',
+    'Renfrewshire',
+    'Rest of the World',
+    'Ross-Shire',
+    'Ross-shire',
+    'Roxburghshire',
+    'Rutland',
+    'Saudi Arabia',
+    'Scotland',
+    'Selkirkshire',
+    'Shetland Islands',
+    'Shropshire',
+    'Singapore',
+    'Somerset',
+    'South East England',
+    'South East London',
+    'South Glamorgan',
+    'South Humberside',
+    'South West England',
+    'South West London',
+    'South Yorkshire',
+    'Spain',
+    'St. Vincent & The Grenadines',
+    'Staffordshire',
+    'Stirlingshire',
+    'Suffolk',
+    'Surrey',
+    'Sutherland',
+    'Sweden',
+    'Switzerland',
+    'Thailand',
+    'Tyne And Wear',
+    'Tyne and Wear',
+    'USA',
+    'United Arab Emirates',
+    'Wales',
+    'Warwickshire',
+    'West Glamorgan',
+    'West London',
+    'West Lothian',
+    'West Midlands',
+    'West Midlands (Region)',
+    'West Sussex',
+    'West Yorkshire',
+    'Wigtownshire',
+    'Wiltshire',
+    'Worcestershire',
+    'Wrexham',
+    'Yorkshire and Humberside',
+]
 
 
 tfidf_models = {cat: joblib.load(f'models/{cat}_tfidf.joblib') for cat in categories}
@@ -98,26 +229,59 @@ def txt_to_cluster(txt, cat):
 max_rf_regressor = joblib.load('models/max_salary_rf')
 min_rf_regressor = joblib.load('models/min_salary_rf')
 
-st.text('If you are looking to post a job, you came to the right place, we will help you to have\n'
-'an estimate of how much the industry is paying for this kind of position.')
+st.header('If you are looking to post a job, you came to the right place, we will help you to have an estimate of how much the industry is paying for this kind of position.')
 
-cat = st.selectbox('Select a category (just one please)', categories)
-if len(cat)>0:
-    st.text(cat)
+cat = st.selectbox('Select a category', categories)
 
-contract_type = st.selectbox('Select a contract type (just one please)', contracts)
-if len(contract_type)>0:
-    st.text(contract_type)
+contract_type = st.selectbox('Select a contract type', contracts)
 
-d_work = st.multiselect('Full time or part time? (can be both)', d_works)
-if len(d_work)>0:
-    st.text(d_work)
+d_work = st.multiselect('Full time or part time?', d_works)
 
-description = st.text_area('Describe the job (minimum 50 characters)')
-if len(cat)>0 and len(description)>50:
-    cluster = txt_to_cluster([description.lower()], cat[0])
-    st.text(cluster)
+description = st.text_area('Describe the job')
 
-state = st.selectbox('Select a state? (just one please)', states)
-if len(state)>0:
-    st.text(state)
+state = st.selectbox('Select a state?', states)
+
+has_category = len(cat)>0
+has_contract_type = len(contract_type)>0
+has_d_work = len(d_work)>0
+has_description = len(cat)>0 and len(description)>50
+has_state = len(state)>0
+
+if (
+    has_category
+    and has_contract_type
+    and has_d_work
+    and has_description
+    and has_description
+    and has_state
+):
+    category_arr = [0]*len(categories)
+    category_arr[categories.index(cat)] = 1
+    contract_type_arr = [0]*len(contracts)
+    contract_type_arr[contracts.index(contract_type)] = 1
+    if len(d_work)==2:
+        d_work_arr = [0]*len(d_works)
+    else:
+        d_work_arr = [0]*len(d_works)
+        d_work_arr[d_works.index(d_work[0])] = 1
+    cluster = txt_to_cluster([description.lower()], cat)
+    description_arr = [0]*10
+    description_arr[cluster] = 1
+    state_arr = [0]*len(states)
+    state_arr[states.index(state)] = 1
+
+    final_x = [
+        *contract_type_arr,
+        *d_work_arr,
+        *state_arr,
+        *category_arr,
+        *description_arr
+    ]
+    # st.text(f'{len(contract_type_arr), len(d_work_arr), len(state_arr), len(category_arr), len(description_arr)}')
+
+    min_sal = min_rf_regressor.predict([np.array(final_x)])[0]
+    max_sal = max_rf_regressor.predict([np.array(final_x)])[0]
+    st.header(f"The recoomended salary per hour is minimum: £{min_sal:.2f}, maximum: £{max_sal:.2f}")
+    st.header(f"The recoomended salary per day is minimum: £{(min_sal*8):.2f}, maximum: £{(max_sal*8):.2f}")
+    st.header(f"The recoomended salary per year is minimum: £{(min_sal*8*255):.2f}, maximum: £{(max_sal*8*255):.2f}")
+
